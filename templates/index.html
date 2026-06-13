@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Gastos de Escrituración | LLAVE Servicios Inmobiliarios</title>
+    <title>Simulador de Gastos de Escrituración | Dante Propiedades Inmobiliaria</title>
     <meta name="description" content="Calculá con precisión y de forma transparente todos los impuestos, honorarios y gastos de compraventa para comprador y vendedor en CABA y Provincia de Buenos Aires.">
     
     <!-- Font Awesome for icons -->
@@ -16,10 +16,11 @@
 
     <!-- Printable Header (hidden on screen, visible on print) -->
     <div class="print-header">
-        <img src="/static/images/llave.png" alt="LLAVE Logo" class="print-logo">
+        <img src="/static/images/llave.png" alt="Dante Propiedades Logo" class="print-logo">
         <div>
-            <h1 style="font-family: 'Outfit', sans-serif; color: #0060B0; margin: 0;">LLAVE</h1>
-            <p style="margin: 0; font-size: 14px; font-weight: bold; color: #64748b;">Informe de Gastos de Escrituración</p>
+            <h1 style="font-family: 'Outfit', sans-serif; color: #0060B0; margin: 0; font-size: 24px;">Dante Propiedades</h1>
+            <p style="margin: 0; font-size: 12px; font-weight: bold; color: #64748b;">Matrícula CPI 9337 Tomo 2 Folio 8</p>
+            <p style="margin: 0; font-size: 11px; color: #64748b;">Tel: +54 11 7659-6523 | Informe de Escrituración</p>
         </div>
     </div>
 
@@ -31,8 +32,11 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo-wrapper">
-                <img src="/static/images/llave.png" alt="Logo de LLAVE" class="logo-img">
-                <span class="brand-text">LLAVE <span>Inmobiliaria</span></span>
+                <img src="/static/images/llave.png" alt="Logo de Dante Propiedades" class="logo-img">
+                <div style="display: flex; flex-direction: column;">
+                    <span class="brand-text" style="line-height: 1.1; font-size: 22px;">Dante <span>Propiedades</span></span>
+                    <span style="font-size: 9px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase;">Inmobiliaria | Mat. 9337</span>
+                </div>
             </a>
             
             <div class="header-actions">
@@ -297,9 +301,14 @@
         <section class="contact-banner">
             <h2>¿Tenés dudas sobre tu operación inmobiliaria?</h2>
             <p>En <strong>Dante Propiedades Inmobiliaria</strong> te asesoramos en cada etapa de la compra, venta o escrituración de tu propiedad para que operes con tranquilidad y respaldo profesional.</p>
-            <button class="btn btn-primary" onclick="window.open('mailto:info@llaveinmobiliaria.com.ar?subject=Consulta%20desde%20Simulador%20de%20Escritura')">
-                <i class="far fa-envelope"></i> Contactar con un Asesor
-            </button>
+            <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 16px;">
+                <a class="btn btn-primary" href="https://wa.me/541176596523?text=Hola,%20quería%20consultar%20sobre%20los%20gastos%20de%20escrituración" target="_blank" style="text-decoration: none;">
+                    <i class="fab fa-whatsapp"></i> +54 11 7659-6523
+                </a>
+                <a class="btn btn-outline" href="mailto:info@dantepropiedades.com.ar?subject=Consulta%20desde%20Simulador%20de%20Escritura" style="background: rgba(255,255,255,0.1); border-color: white; color: white;">
+                    <i class="far fa-envelope"></i> Escribinos un Correo
+                </a>
+            </div>
         </section>
 
     </main>
@@ -308,11 +317,15 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="/static/images/llave.png" alt="LLAVE Logo" class="footer-logo-img">
-                <span class="brand-text" style="font-size: 18px;">LLAVE <span>Inmobiliaria</span></span>
+                <img src="/static/images/llave.png" alt="Logo de Dante Propiedades" class="footer-logo-img">
+                <div style="display: flex; flex-direction: column;">
+                    <span class="brand-text" style="font-size: 18px; line-height: 1.1;">Dante <span>Propiedades</span></span>
+                    <span style="font-size: 9px; font-weight: bold; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Inmobiliaria</span>
+                </div>
             </div>
-            <div class="footer-text">
-                &copy; 2026 LLAVE Servicios Inmobiliarios. Todos los derechos reservados. Basado en normativas vigentes en CABA y PBA.
+            <div class="footer-text" style="text-align: right; font-size: 12px;">
+                <div>&copy; 2026 Dante Propiedades Inmobiliaria. Todos los derechos reservados.</div>
+                <div style="margin-top: 4px; font-weight: 600; color: var(--text-muted);">Matrícula CPI 9337 Tomo 2 Folio 8 | Tel: +54 11 7659-6523</div>
             </div>
         </div>
     </footer>
