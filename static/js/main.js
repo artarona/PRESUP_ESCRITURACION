@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // DOM Elements - Inputs
     const propValueInput = document.getElementById('prop-value');
     const propValueSlider = document.getElementById('prop-value-slider');
+    const propValueDisplay = document.getElementById('prop-value-display');
     const locationCaba = document.getElementById('loc-caba');
     const locationPba = document.getElementById('loc-pba');
     const roleBuyer = document.getElementById('role-buyer');
@@ -86,8 +87,16 @@ document.addEventListener('DOMContentLoaded', function() {
     updateThemeIcon(currentTheme);
 
     // Sync input box and sliders
+    function updatePropertyValueDisplay() {
+        const value = parseFloat(propValueInput.value) || parseFloat(propValueSlider.value) || 0;
+        if (propValueDisplay) {
+            propValueDisplay.innerText = formatUSD(value);
+        }
+    }
+
     function syncInputs(source, target) {
         target.value = source.value;
+        updatePropertyValueDisplay();
         calculateCosts();
     }
 
@@ -580,5 +589,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Run Initial Calculations
+    updatePropertyValueDisplay();
     calculateCosts();
 });
